@@ -2,7 +2,6 @@ package org.example;
 
 import org.example.config.Config;
 import org.example.worker.ClassWorker;
-import org.example.worker.MethodWorker;
 
 public class Main {
     //To run the application switch wrokers as needed by uncommenting them

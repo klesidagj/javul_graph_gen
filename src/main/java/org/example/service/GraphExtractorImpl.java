@@ -11,8 +11,6 @@ import org.example.config.Config;
 import org.example.parser.ParserStrategy;
 import org.example.model.ExtractionResult;
 import org.example.model.MethodResult;
-import org.example.model.SourceType;
-import org.example.parser.*;
 import java.io.StringWriter;
 import java.util.Collections;
 import java.util.List;
@@ -91,7 +89,6 @@ public class GraphExtractorImpl implements GraphExtractor {
         }
     }
 
-    @SuppressWarnings("unchecked")
     private void writeValue(JsonGenerator gen, Object value) {
 
         if (value == null) {

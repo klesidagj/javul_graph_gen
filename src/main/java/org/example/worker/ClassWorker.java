@@ -3,7 +3,6 @@ package org.example.worker;
 import org.example.config.Config;
 import org.example.model.MethodResult;
 import org.example.model.ExtractionResult;
-import org.example.parser.ClassLevelParser;
 import org.example.parser.MethodLevelParser;
 import org.example.service.GraphExtractorImpl;
 
@@ -24,7 +23,7 @@ public class ClassWorker {
     public void run() throws Exception {
 
         String selectSql = """
-            SELECT id, raw_code 
+            SELECT id, raw_code
             FROM %s
             WHERE source IN ('Juliet', 'Owasp')
             LIMIT ?
